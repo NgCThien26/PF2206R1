@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Điểm khối D</title>
+</head>
+<style>
+    input{
+        width: 100px;
+    }
+    p{
+        color: red;
+    }
+</style>
+<body>
+    <table>
+
+                <h1>Tính điểm ĐH khối D</h1>
+            <tr>
+                <td><label for="">Môn Toán</label></td>
+                <td><input type="text" name="" id="toan"></td>  
+            </tr>
+            <tr>
+                <td><label for="">Môn Văn</label></td>
+                <td><input type="text" name="" id="van"></td>
+            </tr>
+            <tr>
+                <td><label for="">Môn Anh</label></td>
+                <td><input type="text" name="" id="anh"></td>
+            </tr>
+            <tr>
+                <td><label for="">Khu vực</label></td>
+                <td>
+                    <select name="" id="kv">
+                        <option id="kv1" value="0.75">KV1</option>
+                        <option id="kv2" value="0.5">KV2</option>
+                        <option id="kv2nt" value="0.25">KV2-NT</option>
+                        <option id="kv3" value="0">KV3</option>
+
+                    </select>
+                </td> 
+            </tr>
+            <td><button onclick="tinhdiem()">Tính Điểm</button></td>
+    </table>
+        <p id="result"></p> 
+
+    <script src="demo.js"></script>
+</body>
+</html>
