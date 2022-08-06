@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let amountNum = +prompt("Nhap so nguyen to can in :");
+        let integerNum = 2;
+        for (let count = 0; count < amountNum; count++){  
+            if (integerNum == 2){
+                document.write(integerNum + " ");
+                integerNum++;
+            }
+            else {
+                do{ 
+                    
+                    a = true;
+                    for (let chek = 2; chek < integerNum-1; chek++){
+                        if (integerNum % chek == 0){
+                            a = false;                          
+                            break;
+                        }                      
+                    }                  
+                    if (a){
+                        document.write(integerNum + " ");
+                    }
+                    integerNum++;
+                    
+                }
+                while(a = false);
+                integerNum++;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,17 +1,18 @@
-const number = parseInt(prompt('Nhập số: '));
-let n1 = 0, n2 = 1, nextTerm;
+const number = parseInt(prompt('Nhập số dương: '));
+let n1 = 1, n2 = 1, Term;
 
-console.log('Dãy Fibonacci:');
-console.log(n1);
-console.log(n2);
+document.write('Dãy số Fibonacci là:  ');
+document.write(n1 + ' ');
+document.write(n2 + ' ');
 
-nextTerm = n1 + n2;
+Term = n1 + n2;
 
-while (nextTerm <= number) {
+while (Term <= number) {
 
-    console.log(nextTerm);
+    document.write(Term + " ");
 
     n1 = n2;
-    n2 = nextTerm;
-    nextTerm = n1 + n2;
+    n2 = Term;
+    Term = n1 + n2;
 }
+
